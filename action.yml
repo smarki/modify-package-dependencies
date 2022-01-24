@@ -1,0 +1,11 @@
+name: 'Modify package dependencies'
+description: 'Allows to modify the package.json dependencies'
+author: "S. Markidis"
+inputs:
+  extra-dependencies: # JSON string reflecting the dependencies and devDependencies key
+    description: 'JSON string defining the dependencies and devDependencies properties similar to package.json'
+    required: true
+    default: '{}'
+runs:
+  using: 'node16'
+  main: 'index.js'
